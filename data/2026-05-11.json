@@ -1,0 +1,122 @@
+{
+  "date": "2026-05-11",
+  "updated_at": "2026-05-11 15:30",
+  "section1": {
+    "title": "昨日上新监控",
+    "tiers": {
+      "T1": {
+        "label": "T1交易所",
+        "exchanges": [
+          { "name": "BINANCE", "new": 0, "cumulative": 3, "coins": [] },
+          { "name": "Binance alpha", "new": 0, "cumulative": 10, "coins": [] },
+          { "name": "Bybit", "new": 0, "cumulative": 6, "coins": [] },
+          { "name": "Coinbase", "new": 0, "cumulative": 14, "coins": [] },
+          { "name": "OKX", "new": 0, "cumulative": 9, "coins": [] },
+          { "name": "Upbit", "new": 0, "cumulative": 10, "coins": [] }
+        ]
+      },
+      "T2": {
+        "label": "T2交易所",
+        "exchanges": [
+          { "name": "HTX", "new": 0, "cumulative": 11, "coins": [] },
+          { "name": "Bitget", "new": 0, "cumulative": 15, "coins": [] },
+          { "name": "Kucoin", "new": 0, "cumulative": 22, "coins": [] },
+          { "name": "Gate", "new": 0, "cumulative": 27, "coins": [] }
+        ]
+      },
+      "T3": {
+        "label": "T3交易所",
+        "exchanges": [
+          { "name": "P网", "new": 0, "cumulative": 12, "coins": [] },
+          { "name": "MEXC", "new": 1, "cumulative": 73, "coins": [
+            { "symbol": "lo0p", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "Bitmart", "new": 0, "cumulative": 70, "coins": [] },
+          { "name": "lbank", "new": 2, "cumulative": 89, "coins": [
+            { "symbol": "shit", "volume": 1007502, "dewatered": null, "volume_label": "交易额100.75wU" },
+            { "symbol": "lo0p", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "crypto", "new": 0, "cumulative": 6, "coins": [] }
+        ]
+      }
+    }
+  },
+  "section2": {
+    "title": "市场重点新资产监控",
+    "threshold": "交易额大于5000wU",
+    "groups": [
+      {
+        "tier": "T1",
+        "label": "T1 交易所",
+        "items": [
+          { "exchange": "binance", "symbol": "chip", "volume": 239475643, "dewatered": 32208618 },
+          { "exchange": "bybit", "symbol": "bill", "volume": 185507775, "dewatered": 412903 },
+          { "exchange": "okx", "symbol": "mega", "volume": 298746803, "dewatered": 124066693 },
+          { "exchange": "okx", "symbol": "edge", "volume": 51812907, "dewatered": 45619996 }
+        ]
+      }
+    ]
+  },
+  "section3": {
+    "title": "现货新资产的份额表现",
+    "subtitle": "去水额仅算usdt对",
+    "htx_public_share": 7.0,
+    "htx_dewatered_share": 0.4,
+    "htx_dewatered_volume": "1.00 百万",
+    "htx_day_change": 7.28,
+    "htx_week_change": 53.75,
+    "market_dewatered_volume": "2.79 亿",
+    "market_day_change": 107.83,
+    "market_week_change": 19.10
+  },
+  "section4": {
+    "title": "新资产对平台贡献",
+    "trading_users": { "count": 439, "rate": 5, "top_coin": "bill", "top_count": 118 },
+    "new_users": { "count": 23, "rate": 5, "top_coin": "xmn", "top_count": 15 },
+    "reactivated_users": { "count": 22, "rate": 2, "top_coin": "bill", "top_count": 6 }
+  },
+  "section5": {
+    "title": "重点新资产",
+    "subtitle": "包含以下资产：日去水交易额大于50wU、或近一周上新、或昨日涨跌幅大于30%",
+    "assets": [
+      { "symbol": "bill", "days_listed": 4, "dewatered": "53.50wU", "traders": 118, "change": "+29.88%", "new_users": 4, "reactivated": 6 },
+      { "symbol": "twt", "days_listed": 4, "dewatered": "5912", "traders": 32, "change": "+4.88%", "new_users": 1, "reactivated": 0 }
+    ]
+  },
+  "section6": {
+    "title": "现货存量资产的份额表现",
+    "subtitle": "去水额仅算usdt对",
+    "htx_public_share": 7.3,
+    "htx_dewatered_share": 3.0,
+    "htx_dewatered_volume": "0.88 亿",
+    "htx_day_change": -22.77,
+    "htx_week_change": -12.39,
+    "market_dewatered_volume": "65.25 亿",
+    "market_day_change": -19.97,
+    "market_week_change": -9.53
+  },
+  "section7": {
+    "title": "存量资产监控",
+    "subtitle": "包含以下资产：重点币种btc、eth、sol、htx、trx，或昨日涨幅高于+30%",
+    "assets": [
+      { "symbol": "btc", "dewatered": "2086.74wU", "traders": 1225, "change": "+1.15%", "new_users": 205, "reactivated": 95 },
+      { "symbol": "eth", "dewatered": "1455.58wU", "traders": 670, "change": "+1.37%", "new_users": 24, "reactivated": 51 },
+      { "symbol": "htx", "dewatered": "22.06wU", "traders": 617, "change": "+0.05%", "new_users": 31, "reactivated": 101 },
+      { "symbol": "sol", "dewatered": "521.57wU", "traders": 372, "change": "+2.09%", "new_users": 8, "reactivated": 43 },
+      { "symbol": "trx", "dewatered": "224.90wU", "traders": 1775, "change": "+0.61%", "new_users": 89, "reactivated": 94 },
+      { "symbol": "sweat", "dewatered": "12.95wU", "traders": 132, "change": "+427.71%", "new_users": 4, "reactivated": 19 },
+      { "symbol": "ept", "dewatered": "5854", "traders": 24, "change": "+85.93%", "new_users": 0, "reactivated": 0 },
+      { "symbol": "sca", "dewatered": "1048", "traders": 13, "change": "+75.62%", "new_users": 0, "reactivated": 0 },
+      { "symbol": "osmo", "dewatered": "4098", "traders": 14, "change": "+60.30%", "new_users": 0, "reactivated": 0 },
+      { "symbol": "sns", "dewatered": "21", "traders": 3, "change": "+50.98%", "new_users": 0, "reactivated": 0 },
+      { "symbol": "mon", "dewatered": "2565", "traders": 22, "change": "+50.64%", "new_users": 0, "reactivated": 1 },
+      { "symbol": "clawd", "dewatered": "4238", "traders": 23, "change": "+49.37%", "new_users": 0, "reactivated": 1 },
+      { "symbol": "planck", "dewatered": "357", "traders": 14, "change": "+43.17%", "new_users": 1, "reactivated": 0 },
+      { "symbol": "layer", "dewatered": "13.78wU", "traders": 76, "change": "+37.47%", "new_users": 0, "reactivated": 2 },
+      { "symbol": "clawnch", "dewatered": "1.31wU", "traders": 34, "change": "+35.09%", "new_users": 0, "reactivated": 1 },
+      { "symbol": "psg", "dewatered": "1.49wU", "traders": 47, "change": "+33.49%", "new_users": 3, "reactivated": 1 },
+      { "symbol": "lvva", "dewatered": "1.73wU", "traders": 29, "change": "+32.26%", "new_users": 0, "reactivated": 1 },
+      { "symbol": "hippo", "dewatered": "2.76wU", "traders": 52, "change": "+31.40%", "new_users": 0, "reactivated": 2 }
+    ]
+  }
+}
