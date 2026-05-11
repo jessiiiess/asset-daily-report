@@ -79,43 +79,43 @@ function makeCard(title, badge) {
   return { card, body };
 }
 
+function buildCoinTags(coins) {
+  if (!coins || coins.length === 0) return '—';
+  return coins.map(c => {
+    const vol = c.volume_label === '交易额较少'
+      ? '<span class="coin-vol minor">交易额较少</span>'
+      : `<span class="coin-vol">${c.volume_label}</span>`;
+    return `<span class="coin-tag">${c.symbol}${vol}</span>`;
+  }).join('');
+}
+
 function renderSection1(container, s) {
   const { card, body } = makeCard('一、' + s.title);
 
+  let rowsHtml = '';
   for (const tierKey of ['T1', 'T2', 'T3']) {
     const tier = s.tiers[tierKey];
     if (!tier) continue;
-    const label = document.createElement('div');
-    label.className = 'tier-label';
-    label.textContent = tier.label;
-    body.appendChild(label);
-
+    rowsHtml += `<tr class="group-header-row"><td colspan="4">${tier.label}</td></tr>`;
     for (const ex of tier.exchanges) {
-      const line = document.createElement('div');
-      line.className = 'exchange-line';
-      let coinsText = '';
-      if (ex.coins && ex.coins.length > 0) {
-        const parts = [];
-        const minor = [];
-        for (const c of ex.coins) {
-          if (c.volume_label === '交易额较少') {
-            minor.push(c.symbol);
-          } else {
-            parts.push(`${c.symbol} ${c.volume_label}`);
-          }
-        }
-        if (minor.length > 0) {
-          parts.push(`${minor.join('，')}，交易额较少`);
-        }
-        coinsText = parts.join('，');
-      }
+      const rowCls = ex.new > 0 ? ' class="row-highlight"' : '';
       const newCls = ex.new > 0 ? ' has-new' : '';
-      line.innerHTML = `<span class="name">${ex.name}</span>` +
-        `<span class="count${newCls}">上新+${ex.new}（累计+${ex.cumulative}）</span>` +
-        (coinsText ? `：<span class="coins">${coinsText}</span>` : '：');
-      body.appendChild(line);
+      rowsHtml += `<tr${rowCls}>
+        <td class="col-name">${ex.name}</td>
+        <td class="col-new mono${newCls}">+${ex.new}</td>
+        <td class="col-cum mono">+${ex.cumulative}</td>
+        <td class="col-coins">${buildCoinTags(ex.coins)}</td>
+      </tr>`;
     }
   }
+
+  const wrap = document.createElement('div');
+  wrap.className = 'overflow-x';
+  wrap.innerHTML = `<table class="listing-table">
+    <thead><tr><th>交易所</th><th>昨日</th><th>累计</th><th>上新币种</th></tr></thead>
+    <tbody>${rowsHtml}</tbody>
+  </table>`;
+  body.appendChild(wrap);
 
   container.appendChild(card);
 }
