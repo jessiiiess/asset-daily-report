@@ -98,25 +98,35 @@
   "section7": {
     "title": "存量资产监控",
     "subtitle": "包含以下资产：重点币种btc、eth、sol、htx、trx，或昨日涨幅高于+30%",
-    "assets": [
-      { "symbol": "btc", "dewatered": "2086.74wU", "traders": 1225, "change": "+1.15%", "new_users": 205, "reactivated": 95 },
-      { "symbol": "eth", "dewatered": "1455.58wU", "traders": 670, "change": "+1.37%", "new_users": 24, "reactivated": 51 },
-      { "symbol": "htx", "dewatered": "22.06wU", "traders": 617, "change": "+0.05%", "new_users": 31, "reactivated": 101 },
-      { "symbol": "sol", "dewatered": "521.57wU", "traders": 372, "change": "+2.09%", "new_users": 8, "reactivated": 43 },
-      { "symbol": "trx", "dewatered": "224.90wU", "traders": 1775, "change": "+0.61%", "new_users": 89, "reactivated": 94 },
-      { "symbol": "sweat", "dewatered": "12.95wU", "traders": 132, "change": "+427.71%", "new_users": 4, "reactivated": 19 },
-      { "symbol": "ept", "dewatered": "5854", "traders": 24, "change": "+85.93%", "new_users": 0, "reactivated": 0 },
-      { "symbol": "sca", "dewatered": "1048", "traders": 13, "change": "+75.62%", "new_users": 0, "reactivated": 0 },
-      { "symbol": "osmo", "dewatered": "4098", "traders": 14, "change": "+60.30%", "new_users": 0, "reactivated": 0 },
-      { "symbol": "sns", "dewatered": "21", "traders": 3, "change": "+50.98%", "new_users": 0, "reactivated": 0 },
-      { "symbol": "mon", "dewatered": "2565", "traders": 22, "change": "+50.64%", "new_users": 0, "reactivated": 1 },
-      { "symbol": "clawd", "dewatered": "4238", "traders": 23, "change": "+49.37%", "new_users": 0, "reactivated": 1 },
-      { "symbol": "planck", "dewatered": "357", "traders": 14, "change": "+43.17%", "new_users": 1, "reactivated": 0 },
-      { "symbol": "layer", "dewatered": "13.78wU", "traders": 76, "change": "+37.47%", "new_users": 0, "reactivated": 2 },
-      { "symbol": "clawnch", "dewatered": "1.31wU", "traders": 34, "change": "+35.09%", "new_users": 0, "reactivated": 1 },
-      { "symbol": "psg", "dewatered": "1.49wU", "traders": 47, "change": "+33.49%", "new_users": 3, "reactivated": 1 },
-      { "symbol": "lvva", "dewatered": "1.73wU", "traders": 29, "change": "+32.26%", "new_users": 0, "reactivated": 1 },
-      { "symbol": "hippo", "dewatered": "2.76wU", "traders": 52, "change": "+31.40%", "new_users": 0, "reactivated": 2 }
+    "groups": [
+      {
+        "label": "重点币种",
+        "assets": [
+          { "symbol": "btc", "dewatered": "2086.74wU", "traders": 1225, "change": "+1.15%", "new_users": 205, "reactivated": 95 },
+          { "symbol": "eth", "dewatered": "1455.58wU", "traders": 670, "change": "+1.37%", "new_users": 24, "reactivated": 51 },
+          { "symbol": "htx", "dewatered": "22.06wU", "traders": 617, "change": "+0.05%", "new_users": 31, "reactivated": 101 },
+          { "symbol": "sol", "dewatered": "521.57wU", "traders": 372, "change": "+2.09%", "new_users": 8, "reactivated": 43 },
+          { "symbol": "trx", "dewatered": "224.90wU", "traders": 1775, "change": "+0.61%", "new_users": 89, "reactivated": 94 }
+        ]
+      },
+      {
+        "label": "昨日涨幅 ≥ 30%",
+        "assets": [
+          { "symbol": "sweat", "dewatered": "12.95wU", "traders": 132, "change": "+427.71%", "new_users": 4, "reactivated": 19 },
+          { "symbol": "ept", "dewatered": "5854", "traders": 24, "change": "+85.93%", "new_users": 0, "reactivated": 0 },
+          { "symbol": "sca", "dewatered": "1048", "traders": 13, "change": "+75.62%", "new_users": 0, "reactivated": 0 },
+          { "symbol": "osmo", "dewatered": "4098", "traders": 14, "change": "+60.30%", "new_users": 0, "reactivated": 0 },
+          { "symbol": "sns", "dewatered": "21", "traders": 3, "change": "+50.98%", "new_users": 0, "reactivated": 0 },
+          { "symbol": "mon", "dewatered": "2565", "traders": 22, "change": "+50.64%", "new_users": 0, "reactivated": 1 },
+          { "symbol": "clawd", "dewatered": "4238", "traders": 23, "change": "+49.37%", "new_users": 0, "reactivated": 1 },
+          { "symbol": "planck", "dewatered": "357", "traders": 14, "change": "+43.17%", "new_users": 1, "reactivated": 0 },
+          { "symbol": "layer", "dewatered": "13.78wU", "traders": 76, "change": "+37.47%", "new_users": 0, "reactivated": 2 },
+          { "symbol": "clawnch", "dewatered": "1.31wU", "traders": 34, "change": "+35.09%", "new_users": 0, "reactivated": 1 },
+          { "symbol": "psg", "dewatered": "1.49wU", "traders": 47, "change": "+33.49%", "new_users": 3, "reactivated": 1 },
+          { "symbol": "lvva", "dewatered": "1.73wU", "traders": 29, "change": "+32.26%", "new_users": 0, "reactivated": 1 },
+          { "symbol": "hippo", "dewatered": "2.76wU", "traders": 52, "change": "+31.40%", "new_users": 0, "reactivated": 2 }
+        ]
+      }
     ]
   }
 }

@@ -109,8 +109,9 @@ function renderSection1(container, s) {
         }
         coinsText = parts.join('，');
       }
+      const newCls = ex.new > 0 ? ' has-new' : '';
       line.innerHTML = `<span class="name">${ex.name}</span>` +
-        `<span class="count">上新+${ex.new}（累计+${ex.cumulative}）</span>` +
+        `<span class="count${newCls}">上新+${ex.new}（累计+${ex.cumulative}）</span>` +
         (coinsText ? `：<span class="coins">${coinsText}</span>` : '：');
       body.appendChild(line);
     }
@@ -279,7 +280,40 @@ function renderSection5(container, s) {
 }
 
 function renderSection7(container, s) {
-  renderDetailTable(container, '七', s, false);
+  if (s.groups) {
+    renderGroupedDetailTable(container, '七', s);
+  } else {
+    renderDetailTable(container, '七', s, false);
+  }
+}
+
+function renderGroupedDetailTable(container, num, s) {
+  const { card, body } = makeCard(`${num}、${s.title}`, s.subtitle);
+  const cols = ['币种', '去水交易额', '交易人数', '涨幅', '拉新', '激活沉默'];
+  const colCount = cols.length;
+  const headerHtml = cols.map(c => `<th>${c}</th>`).join('');
+
+  let bodyHtml = '';
+  for (const group of s.groups) {
+    bodyHtml += `<tr class="group-header-row"><td colspan="${colCount}">${group.label}</td></tr>`;
+    for (const a of group.assets) {
+      const cls = changeClass(parseFloat(a.change));
+      bodyHtml += `<tr>
+        <td>${a.symbol}</td>
+        <td class="mono">${a.dewatered}</td>
+        <td class="mono">${a.traders}</td>
+        <td class="change-cell ${cls}">${a.change}</td>
+        <td class="mono">${a.new_users}人</td>
+        <td class="mono">${a.reactivated}人</td>
+      </tr>`;
+    }
+  }
+
+  const wrap = document.createElement('div');
+  wrap.className = 'overflow-x';
+  wrap.innerHTML = `<table class="detail-table"><thead><tr>${headerHtml}</tr></thead><tbody>${bodyHtml}</tbody></table>`;
+  body.appendChild(wrap);
+  container.appendChild(card);
 }
 
 // Export
@@ -389,7 +423,10 @@ function buildPlainText(data) {
   // Section 7
   const s7 = data.section7;
   out += `**七、${s7.title}（${s7.subtitle}）**\n`;
-  for (const a of s7.assets) {
+  const s7assets = s7.groups
+    ? s7.groups.flatMap(g => g.assets)
+    : s7.assets;
+  for (const a of s7assets) {
     out += `${a.symbol}：昨日去水交易额 ${a.dewatered}，交易人数 ${a.traders}，收盘涨幅 ${a.change}，拉新首次交易 ${a.new_users}人，激活沉默 ${a.reactivated}人；\n`;
   }
 
