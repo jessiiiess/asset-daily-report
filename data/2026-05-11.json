@@ -20,21 +20,36 @@
         "exchanges": [
           { "name": "HTX", "new": 0, "cumulative": 11, "coins": [] },
           { "name": "Bitget", "new": 0, "cumulative": 15, "coins": [] },
-          { "name": "Kucoin", "new": 0, "cumulative": 22, "coins": [] },
-          { "name": "Gate", "new": 0, "cumulative": 27, "coins": [] }
+          { "name": "Kucoin", "new": 0, "cumulative": 18, "coins": [] },
+          { "name": "Gate", "new": 1, "cumulative": 27, "coins": [
+            { "symbol": "prosper", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
+          ]}
         ]
       },
       "T3": {
         "label": "T3交易所",
         "exchanges": [
-          { "name": "P网", "new": 0, "cumulative": 12, "coins": [] },
-          { "name": "MEXC", "new": 1, "cumulative": 73, "coins": [
-            { "symbol": "lo0p", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
+          { "name": "P网", "new": 1, "cumulative": 12, "coins": [
+            { "symbol": "hanta", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "MEXC", "new": 2, "cumulative": 73, "coins": [
+            { "symbol": "lo0p", "volume": null, "dewatered": null, "volume_label": "交易额较少" },
+            { "symbol": "maxxing", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
           ]},
           { "name": "Bitmart", "new": 0, "cumulative": 70, "coins": [] },
-          { "name": "lbank", "new": 2, "cumulative": 89, "coins": [
-            { "symbol": "shit", "volume": 1007502, "dewatered": null, "volume_label": "交易额100.75wU" },
-            { "symbol": "lo0p", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
+          { "name": "lbank", "new": 12, "cumulative": 89, "coins": [
+            { "symbol": "jpmon", "volume": 3490000, "dewatered": null, "volume_label": "交易额349.0wU" },
+            { "symbol": "maon", "volume": 2296000, "dewatered": null, "volume_label": "交易额229.6wU" },
+            { "symbol": "xomon", "volume": 1630000, "dewatered": null, "volume_label": "交易额163.0wU" },
+            { "symbol": "crwvon", "volume": 1601000, "dewatered": null, "volume_label": "交易额160.1wU" },
+            { "symbol": "vonstock", "volume": 1449000, "dewatered": null, "volume_label": "交易额144.9wU" },
+            { "symbol": "baon", "volume": 1300000, "dewatered": null, "volume_label": "交易额130.0wU" },
+            { "symbol": "maxxing", "volume": 1084000, "dewatered": null, "volume_label": "交易额108.4wU" },
+            { "symbol": "wmton", "volume": 1080000, "dewatered": null, "volume_label": "交易额108.0wU" },
+            { "symbol": "unhon", "volume": 1069000, "dewatered": null, "volume_label": "交易额106.9wU" },
+            { "symbol": "shit", "volume": 1008000, "dewatered": null, "volume_label": "交易额100.8wU" },
+            { "symbol": "lo0p", "volume": null, "dewatered": null, "volume_label": "交易额较少" },
+            { "symbol": "snowon", "volume": null, "dewatered": null, "volume_label": "交易额较少" }
           ]},
           { "name": "crypto", "new": 0, "cumulative": 6, "coins": [] }
         ]
@@ -51,8 +66,8 @@
         "items": [
           { "exchange": "binance", "symbol": "chip", "volume": 239475643, "dewatered": 32208618 },
           { "exchange": "bybit", "symbol": "bill", "volume": 185507775, "dewatered": 412903 },
-          { "exchange": "okx", "symbol": "mega", "volume": 298746803, "dewatered": 124066693 },
-          { "exchange": "okx", "symbol": "edge", "volume": 51812907, "dewatered": 45619996 }
+          { "exchange": "okx", "symbol": "edge", "volume": 51812907, "dewatered": 45619996 },
+          { "exchange": "okx", "symbol": "mega", "volume": 298746803, "dewatered": 124066693 }
         ]
       }
     ]
@@ -65,9 +80,9 @@
     "htx_dewatered_volume": "1.00 百万",
     "htx_day_change": 7.28,
     "htx_week_change": 53.75,
-    "market_dewatered_volume": "2.79 亿",
-    "market_day_change": 107.83,
-    "market_week_change": 19.10
+    "market_dewatered_volume": "2.831 亿",
+    "market_day_change": 103.82,
+    "market_week_change": 18.83
   },
   "section4": {
     "title": "新资产对平台贡献",
