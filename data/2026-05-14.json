@@ -1,0 +1,140 @@
+{
+  "date": "2026-05-14",
+  "updated_at": "2026-05-14 14:30",
+  "section1": {
+    "title": "昨日上新监控",
+    "tiers": {
+      "T1": {
+        "label": "T1交易所",
+        "exchanges": [
+          { "name": "BINANCE", "new": 0, "cumulative": 3, "coins": [] },
+          { "name": "Binance alpha", "new": 1, "cumulative": 11, "coins": [
+            { "symbol": "pharos", "volume": 840000, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "Bybit", "new": 0, "cumulative": 6, "coins": [] },
+          { "name": "Coinbase", "new": 0, "cumulative": 14, "coins": [] },
+          { "name": "OKX", "new": 1, "cumulative": 10, "coins": [
+            { "symbol": "pros", "volume": 1586517, "dewatered": 106255, "volume_label": "交易额158.65wU，去水额10.63wU" }
+          ]},
+          { "name": "Upbit", "new": 1, "cumulative": 12, "coins": [
+            { "symbol": "up2", "volume": 2355, "dewatered": 2355, "volume_label": "交易额较少" }
+          ]}
+        ]
+      },
+      "T2": {
+        "label": "T2交易所",
+        "exchanges": [
+          { "name": "HTX", "new": 0, "cumulative": 11, "coins": [] },
+          { "name": "Bitget", "new": 0, "cumulative": 15, "coins": [] },
+          { "name": "Kucoin", "new": 0, "cumulative": 18, "coins": [] },
+          { "name": "Gate", "new": 8, "cumulative": 35, "coins": [
+            { "symbol": "chip3l", "volume": 20641, "dewatered": 1736, "volume_label": "交易额较少" },
+            { "symbol": "vvv3l", "volume": 18776, "dewatered": 894, "volume_label": "交易额较少" },
+            { "symbol": "chip3s", "volume": 18700, "dewatered": 2017, "volume_label": "交易额较少" },
+            { "symbol": "vvv3s", "volume": 18369, "dewatered": 897, "volume_label": "交易额较少" },
+            { "symbol": "skyai3s", "volume": 8347, "dewatered": 7532, "volume_label": "交易额较少" },
+            { "symbol": "rave3l", "volume": 2812, "dewatered": 2403, "volume_label": "交易额较少" },
+            { "symbol": "skyai3l", "volume": 2738, "dewatered": 2410, "volume_label": "交易额较少" },
+            { "symbol": "rave3s", "volume": 1939, "dewatered": 1779, "volume_label": "交易额较少" }
+          ]}
+        ]
+      },
+      "T3": {
+        "label": "T3交易所",
+        "exchanges": [
+          { "name": "P网", "new": 1, "cumulative": 14, "coins": [
+            { "symbol": "rkc", "volume": 119621, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "MEXC", "new": 2, "cumulative": 79, "coins": [
+            { "symbol": "asteroid", "volume": 86306, "dewatered": null, "volume_label": "交易额较少" },
+            { "symbol": "clawbank", "volume": 46076, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "Bitmart", "new": 0, "cumulative": 75, "coins": [] },
+          { "name": "lbank", "new": 0, "cumulative": 97, "coins": [] },
+          { "name": "crypto", "new": 0, "cumulative": 6, "coins": [] }
+        ]
+      }
+    }
+  },
+  "section2": {
+    "title": "市场重点新资产监控",
+    "threshold": "交易额大于5000wU",
+    "groups": [
+      {
+        "tier": "T1",
+        "label": "T1 交易所",
+        "items": [
+          { "exchange": "binance", "symbol": "chip", "volume": 1263726530, "dewatered": 130911028 },
+          { "exchange": "bybit", "symbol": "bill", "volume": 155388586, "dewatered": 629924 },
+          { "exchange": "okx", "symbol": "edge", "volume": 129679444, "dewatered": 102248853 }
+        ]
+      }
+    ]
+  },
+  "section3": {
+    "title": "现货新资产的份额表现",
+    "subtitle": "去水额仅算usdt对",
+    "htx_public_share": 4.3,
+    "htx_dewatered_share": 0.4,
+    "htx_dewatered_volume": "1.28 百万",
+    "htx_day_change": -18.50,
+    "htx_week_change": 64.35,
+    "market_dewatered_volume": "3.16 亿",
+    "market_day_change": 129.46,
+    "market_week_change": 32.78
+  },
+  "section4": {
+    "title": "新资产对平台贡献",
+    "trading_users": { "count": 502, "rate": 4, "top_coin": "bill", "top_count": 135 },
+    "new_users": { "count": 8, "rate": 1, "top_coin": "bill", "top_count": 3 },
+    "reactivated_users": { "count": 17, "rate": 1, "top_coin": "bill", "top_count": 6 }
+  },
+  "section5": {
+    "title": "重点新资产",
+    "subtitle": "包含以下资产：日去水交易额大于50wU、或近一周上新、或昨日涨跌幅大于30%",
+    "assets": [
+      { "symbol": "neiro", "days_listed": 1, "dewatered": "3.44wU", "traders": 39, "change": "+0.31%", "new_users": 0, "reactivated": 2 },
+      { "symbol": "bill", "days_listed": 7, "dewatered": "71.60wU", "traders": 135, "change": "+4.79%", "new_users": 3, "reactivated": 6 },
+      { "symbol": "twt", "days_listed": 7, "dewatered": "4915", "traders": 20, "change": "+0.33%", "new_users": 0, "reactivated": 0 }
+    ]
+  },
+  "section6": {
+    "title": "现货存量资产的份额表现",
+    "subtitle": "去水额仅算usdt对",
+    "htx_public_share": 6.1,
+    "htx_dewatered_share": 3.0,
+    "htx_dewatered_volume": "1.44 亿",
+    "htx_day_change": 6.35,
+    "htx_week_change": -38.92,
+    "market_dewatered_volume": "93.26 亿",
+    "market_day_change": -1.68,
+    "market_week_change": -50.16
+  },
+  "section7": {
+    "title": "存量资产监控",
+    "subtitle": "包含以下资产：重点币种btc、eth、sol、htx、trx，或昨日涨幅高于+30%",
+    "groups": [
+      {
+        "label": "重点币种",
+        "assets": [
+          { "symbol": "btc", "dewatered": "4513.14wU", "traders": 1813, "change": "+0.03%", "new_users": 353, "reactivated": 115 },
+          { "symbol": "eth", "dewatered": "2702.89wU", "traders": 1540, "change": "+0.11%", "new_users": 25, "reactivated": 64 },
+          { "symbol": "htx", "dewatered": "51.24wU", "traders": 1398, "change": "+0.51%", "new_users": 35, "reactivated": 219 },
+          { "symbol": "sol", "dewatered": "1047.45wU", "traders": 508, "change": "+0.20%", "new_users": 11, "reactivated": 48 },
+          { "symbol": "trx", "dewatered": "219.25wU", "traders": 2417, "change": "+0.83%", "new_users": 101, "reactivated": 890 }
+        ]
+      },
+      {
+        "label": "昨日涨幅 ≥ 30%",
+        "assets": [
+          { "symbol": "pols", "dewatered": "8544", "traders": 26, "change": "+107.58%", "new_users": 0, "reactivated": 2 },
+          { "symbol": "uxlink", "dewatered": "251", "traders": 6, "change": "+71.12%", "new_users": 0, "reactivated": 0 },
+          { "symbol": "up", "dewatered": "75.79wU", "traders": 150, "change": "+60.14%", "new_users": 7, "reactivated": 13 },
+          { "symbol": "sns", "dewatered": "723", "traders": 19, "change": "+46.15%", "new_users": 0, "reactivated": 3 },
+          { "symbol": "sweat", "dewatered": "1.66wU", "traders": 50, "change": "+43.80%", "new_users": 2, "reactivated": 2 },
+          { "symbol": "osmo", "dewatered": "4.63wU", "traders": 50, "change": "+39.05%", "new_users": 0, "reactivated": 0 }
+        ]
+      }
+    ]
+  }
+}
