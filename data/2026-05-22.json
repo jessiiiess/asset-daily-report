@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-21",
+  "updated_at": "2026-05-22 10:00",
+  "section1": {
+    "title": "昨日上新监控",
+    "tiers": {
+      "T1": {
+        "label": "T1交易所",
+        "exchanges": [
+          { "name": "BINANCE", "new": 0, "cumulative": 4, "coins": [] },
+          { "name": "Binance alpha", "new": 0, "cumulative": 14, "coins": [] },
+          { "name": "Bybit", "new": 0, "cumulative": 6, "coins": [] },
+          { "name": "Coinbase", "new": 0, "cumulative": 16, "coins": [] },
+          { "name": "OKX", "new": 0, "cumulative": 10, "coins": [] },
+          { "name": "Upbit", "new": 0, "cumulative": 14, "coins": [] }
+        ]
+      },
+      "T2": {
+        "label": "T2交易所",
+        "exchanges": [
+          { "name": "HTX", "new": 0, "cumulative": 13, "coins": [] },
+          { "name": "Bitget", "new": 0, "cumulative": 20, "coins": [] },
+          { "name": "Kucoin", "new": 1, "cumulative": 24, "coins": [
+            { "symbol": "hpp", "volume": 83776, "dewatered": 2178, "volume_label": "交易额较少" }
+          ]},
+          { "name": "Gate", "new": 6, "cumulative": 45, "coins": [
+            { "symbol": "sndk3l", "volume": 140762, "dewatered": 9412, "volume_label": "交易额较少" },
+            { "symbol": "sndk3s", "volume": 128971, "dewatered": 8803, "volume_label": "交易额较少" },
+            { "symbol": "intc3s", "volume": 104715, "dewatered": 5569, "volume_label": "交易额较少" },
+            { "symbol": "mu3s", "volume": 85175, "dewatered": 5191, "volume_label": "交易额较少" },
+            { "symbol": "intc3l", "volume": 84234, "dewatered": 5048, "volume_label": "交易额较少" },
+            { "symbol": "mu3l", "volume": 73354, "dewatered": 4956, "volume_label": "交易额较少" }
+          ]}
+        ]
+      },
+      "T3": {
+        "label": "T3交易所",
+        "exchanges": [
+          { "name": "P网", "new": 0, "cumulative": 15, "coins": [] },
+          { "name": "MEXC", "new": 4, "cumulative": 92, "coins": [
+            { "symbol": "spacexlp", "volume": 5048748, "dewatered": null, "volume_label": "交易额504.87wU" },
+            { "symbol": "sens", "volume": 1630226, "dewatered": null, "volume_label": "交易额163.02wU" },
+            { "symbol": "nook", "volume": 35211, "dewatered": null, "volume_label": "交易额较少" },
+            { "symbol": "virl", "volume": 34365, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "Bitmart", "new": 1, "cumulative": 89, "coins": [
+            { "symbol": "$nex", "volume": 319040, "dewatered": null, "volume_label": "交易额较少" }
+          ]},
+          { "name": "lbank", "new": 1, "cumulative": 97, "coins": [
+            { "symbol": "virl", "volume": 1017777, "dewatered": null, "volume_label": "交易额101.78wU" }
+          ]},
+          { "name": "crypto", "new": 0, "cumulative": 6, "coins": [] }
+        ]
+      }
+    }
+  },
+  "section2": {
+    "title": "市场重点新资产监控",
+    "threshold": "交易额大于5000wU",
+    "groups": [
+      {
+        "tier": "T1",
+        "label": "T1 交易所",
+        "items": [
+          { "exchange": "bybit", "symbol": "bsb", "volume": 58886563, "dewatered": 202588 }
+        ]
+      }
+    ]
+  },
+  "section3": {
+    "title": "现货新资产的份额表现",
+    "subtitle": "去水额仅算usdt对",
+    "htx_public_share": 18.6,
+    "htx_dewatered_share": 2.3,
+    "htx_dewatered_volume": "1.75 百万",
+    "htx_day_change": 5.18,
+    "htx_week_change": -33.64,
+    "market_dewatered_volume": "0.75 亿",
+    "market_day_change": 28.81,
+    "market_week_change": -52.99
+  },
+  "section4": {
+    "title": "新资产对平台贡献",
+    "trading_users": { "count": 597, "rate": 5, "top_coin": "hype", "top_count": 128 },
+    "new_users": { "count": 13, "rate": 1, "top_coin": "atwo", "top_count": 3 },
+    "reactivated_users": { "count": 32, "rate": 4, "top_coin": "hype", "top_count": 14 }
+  },
+  "section5": {
+    "title": "重点新资产",
+    "subtitle": "包含以下资产：日去水交易额大于50wU、或近一周上新、或昨日涨跌幅大于30%",
+    "assets": [
+      { "symbol": "zest", "days_listed": 3, "dewatered": "27.76wU", "traders": 105, "change": "+33.09%", "new_users": 0, "reactivated": 3 },
+      { "symbol": "atwo", "days_listed": 4, "dewatered": "4.22wU", "traders": 124, "change": "+3.65%", "new_users": 3, "reactivated": 3 },
+      { "symbol": "bill", "days_listed": 15, "dewatered": "71.36wU", "traders": 96, "change": "+1.89%", "new_users": 3, "reactivated": 0 }
+    ]
+  },
+  "section6": {
+    "title": "现货存量资产的份额表现",
+    "subtitle": "去水额仅算usdt对",
+    "htx_public_share": 5.5,
+    "htx_dewatered_share": 2.8,
+    "htx_dewatered_volume": "1.27 亿",
+    "htx_day_change": 10.75,
+    "htx_week_change": -5.47,
+    "market_dewatered_volume": "95.33 亿",
+    "market_day_change": 14.34,
+    "market_week_change": -8.74
+  },
+  "section7": {
+    "title": "存量资产监控",
+    "subtitle": "包含以下资产：重点币种btc、eth、sol、htx、trx，或昨日涨幅高于+30%",
+    "groups": [
+      {
+        "label": "重点币种",
+        "assets": [
+          { "symbol": "btc", "dewatered": "3267.71wU", "traders": 2450, "change": "+0.69%", "new_users": 551, "reactivated": 90 },
+          { "symbol": "eth", "dewatered": "1779.05wU", "traders": 671, "change": "+1.29%", "new_users": 28, "reactivated": 45 },
+          { "symbol": "htx", "dewatered": "43.73wU", "traders": 1440, "change": "+1.21%", "new_users": 32, "reactivated": 184 },
+          { "symbol": "sol", "dewatered": "938.61wU", "traders": 359, "change": "+1.33%", "new_users": 7, "reactivated": 23 },
+          { "symbol": "trx", "dewatered": "290.82wU", "traders": 3786, "change": "+1.43%", "new_users": 944, "reactivated": 150 }
+        ]
+      },
+      {
+        "label": "昨日涨幅 ≥ 30%",
+        "assets": [
+          { "symbol": "bebe", "dewatered": "2250", "traders": 26, "change": "+300.00%", "new_users": 0, "reactivated": 8 },
+          { "symbol": "mfer", "dewatered": "188", "traders": 4, "change": "+122.05%", "new_users": 0, "reactivated": 1 },
+          { "symbol": "prove", "dewatered": "41.25wU", "traders": 53, "change": "+46.01%", "new_users": 0, "reactivated": 0 },
+          { "symbol": "avl", "dewatered": "3353", "traders": 21, "change": "+37.90%", "new_users": 2, "reactivated": 0 },
+          { "symbol": "uxlink", "dewatered": "10", "traders": 2, "change": "+35.78%", "new_users": 0, "reactivated": 0 },
+          { "symbol": "beat", "dewatered": "9.19wU", "traders": 32, "change": "+31.23%", "new_users": 0, "reactivated": 3 }
+        ]
+      }
+    ]
+  }
+}
